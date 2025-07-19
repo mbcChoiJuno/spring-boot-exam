@@ -41,6 +41,7 @@ public class BoardRepositoryTests {
     }
 
     @Test
+    @Transactional
     public void testInsert() {
         // 게시글 등록 API
 
@@ -61,6 +62,7 @@ public class BoardRepositoryTests {
     }
 
     @Test
+    @Transactional
     public void testSelectOne() {
         // 게시글 상세조회 API
 
@@ -80,7 +82,6 @@ public class BoardRepositoryTests {
 
     @Test
     @Transactional
-    @Commit
     public void testUpdate() {
         // 게시글 수정 API
 
@@ -112,13 +113,13 @@ public class BoardRepositoryTests {
     }
 
     @Test
+    @Transactional
     public void testSelectAll() {
 
     }
 
     @Test
     @Transactional
-    @Commit
     public void testSoftDelete() {
         // 게시글 삭제 API
 
